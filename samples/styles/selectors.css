@@ -1,0 +1,79 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  margin: 20px;
+}
+
+/* selects all children of div */
+div > p {
+  color: red;
+}
+
+/* selects adjacent sibling */
+h1 + p {
+  font-style: italic;
+}
+
+/* selects all siblings */
+h1 ~ p {
+  font-variant: small-caps;
+}
+
+/* selects 2nd level child */
+div > section > p {
+  color: orange;
+}
+
+a {
+  display: inline-block;
+  padding: 10px;
+}
+
+a[href="google.com"] {
+  background-color: yellow;
+}
+
+/* selects a elements with href attr having .html anywhere in its value */
+a[href*=".html"] {
+  background-color: aqua;
+}
+
+/* selects a elements with href attr value ending with .pdf */
+a[href$=".pdf"] {
+  background-color: violet;
+}
+
+/* selects a elements with href attr value starting with http */
+a[href^="http"] {
+  background-color: orangered;
+}
+
+form {
+  border: 5px solid orange;
+  background-color: grey;
+  margin-top: 25px;
+  display: block;
+  padding: 20px;
+  color: orange;
+  width: 250px;
+}
+
+form > h1 {
+  color: orange;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+input {
+  display: block;
+  margin-bottom: 10px;
+  border: 5px solid orange;
+}
+
+input + button {
+  background-color: orange;
+  padding: 5px 10px;
+}

@@ -1,0 +1,40 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+body {
+  background-color: antiquewhite;
+  font-family: "Source Code Pro", cursive;
+}
+
+h1 {
+  margin: 5px;
+  font-size: 72px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  word-spacing: 3px;
+  text-decoration: underline overline line-through red dashed 3px;
+  border: blue 5px solid;
+}
+
+p {
+  border: black 5px solid;
+  margin: 5px;
+  text-align: justify;
+  padding: 5px 10px;
+}
+
+p.font-shorthand {
+  color: blueviolet;
+  font: italic small-caps 40px/30px "Source Code Pro", cursive;
+}
+
+p.font-props {
+  color: blueviolet;
+  font-family: "Source Code Pro", cursive;
+  font-size: 40px;
+  line-height: 30px;
+  font-style: italic;
+  font-variant: small-caps;
+}
