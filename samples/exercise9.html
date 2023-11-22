@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Forms with CSS</title>
+    <link rel="stylesheet" type="text/css" href="styles/sample.css" 
+  </head>
+  <body>
+    <h1>
+      <img src="res/login.svg" alt="website login logo" height="100" width="100"/>
+    </h1>
+    <form id="login-form" method="POST" action="loginAction">
+      <h2>LOGIN FORM</h2>
+      <div>
+        <label for="login-username">Enter Username</label>
+        <input
+          type="text"
+          id="login-username"
+          required
+          placeholder="Username"
+          name="username"
+        />
+      </div>
+      <div>
+        <label for="login-pwd">Enter Password</label>
+        <input
+          type="password"
+          id="login-pwd"
+          name="password"
+          required
+          placeholder="Password"
+        />
+      </div>
+      <p>New User ? Click <a href="#register-form">here</a> to register</p>
+      <button>Login</button>
+    </div>
+
+    <form id="register-form">
+        <h2>REGISTRATION FORM</h2>
+      <div>
+        <label for="register-username">Enter Username</label>
+        <input type="text" id="register-username" required placeholder="Username" name="username"/>
+      </div>
+      <div>
+        <label for="register-password">Enter Password</label>
+        <input type="password" id="register-password" required placeholder="Password" name="password"/>
+      </div>
+      <div>
+        <label for="register-confirm-password">Confirm Password</label>
+        <input type="password" id="register-confirm-password" required placeholder="Password" name="confirmPassword" />
+      </div>
+      <div>
+        <label for="register-email">Enter Email ID </label>
+        <input type="email" id="register-email" name="email" required placeholder="Email ID"/>
+      </div>
+      <div>
+        <label for="register-phone-numnber">Phone Number</label>
+        <input type="tel" id="register-phone-numnber" required name="phoneNUmber" placeholder="Phone Number"/>
+      </div>
+      <p>Existing User ? Click <a href="#login-form">here</a> to login</p>
+      <button>Register</button>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Form Input Types</title>
+  </head>
+  <body>
+    <h1>
+      Sample Application Form
+    </h1>
+    <div>
+      <label>Enter Username</label>
+      <input type="text" required placeholder="Username" />
+    </div>
+    <div>
+      <label>Enter Password</label>
+      <input type="password" required placeholder="Password" />
+    </div>
+    <div>
+      <label>Enter Email</label>
+      <input type="email" required placeholder="email" />
+    </div>
+    <div>
+      <label>Enter Phone Number</label>
+      <input type="tel" required placeholder="Phone Number" />
+    </div>
+    <div>
+      <label>Enter Number</label>
+      <input type="number" required placeholder="Number" />
+    </div>
+    <div>
+      <label>Select Range</label>
+      <input type="range" required min="10" max="100" step="10" />
+    </div>
+    <div>
+      <label>Select Color</label>
+      <input type="color" />
+    </div>
+    <div>
+      <label>Select Date</label>
+      <input type="date" />
+    </div>
+    <div>
+      <label>Select Month</label>
+      <input type="month" />
+    </div>
+    <div>
+      <label>Enter Week</label>
+      <input type="week" />
+    </div>
+    <div>
+      <label>Enter Time</label>
+      <input type="time" hidden />
+    </div>
+    <div>
+      <label>File Upload</label>
+      <input type="file" disabled />
+    </div>
+    <fieldset>
+      <legend>Select Gender</legend>
+      <label>MALE</label>
+      <input type="radio" name="gender" value="male" />
+      <label>FEMALE</label>
+      <input type="radio" name="gender" value="female" />
+    </fieldset>
+    <fieldset>
+      <legend>Choose Interests</legend>
+      <label for="html">HTML</label>
+      <input type="checkbox" id="html" name="interests" value="html" />
+      <label for="js">JS</label>
+      <input type="checkbox" id="js" name="interests" value="js" />
+      <label for="css">CSS</label>
+      <input type="checkbox" id="css" name="interests" value="css" />
+    </fieldset>
+    <label for="country">Select Country</label>
+    <select id="country">
+      <option>SELECT</option>
+      <option>India</option>
+      <option>Sri Lanka</option>
+      <option>Australia</option>
+      <option>New Zealand</option>
+    </select>
+    <div>
+      <input type="submit" />
+      <input type="reset" />
+      <input type="button" name="button" value="Button" />
+      <button type="submit">Click</button>
+    </div>
+  </body>
+</html>

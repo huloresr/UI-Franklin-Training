@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Audio And Video Controls</title>
+  </head>
+  <body>
+    <h2>AUDIO PLAYBACK</h2>
+    <audio controls>
+      <source src="res/sample.mp3" type="audio/mpeg" />
+      <source src="res/sample.ogg" type="audio/ogg" />
+      this tag is not supported in your browser
+    </audio>
+    <h2>VIDEO PLAYBACK - VIDEO</h2>
+    <video controls width="400">
+      <source src="res/sample.mp4" type="video/mp4" />
+      <source src="res/sample-video.ogg" type="video/ogg" />
+      this tag is not supported in your browser
+    </video>
+    <br />
+    <h2>VIDEO PLAYBACK - EMBED</h2>
+    <embed
+      type="video/mp4"
+      src="res/sample.mp4"
+      width="300"
+      height="300"
+      title="Title of my video"
+    />
+    <h2>FIGURE TAG</h2>
+    <figure>
+      <img
+        src="res/sample.png"
+        alt="Sample Image"
+        height="100"
+        width="100"
+      /><br />
+      <audio controls>
+        <source src="res/sample.mp3" type="audio/mpeg" />
+        <source src="res/sample.ogg" type="audio/ogg" />
+        this tag is not supported in your browser
+      </audio>
+      <br />
+      <video controls width="400">
+        <source src="res/sample.mp4" type="video/mp4" />
+        <source src="res/sample-video.ogg" type="video/ogg" />
+        this tag is not supported in your browser
+      </video>
+      <figcaption>Sample Multimedia - figcaption</figcaption>
+    </figure>
+  </body>
+</html>
