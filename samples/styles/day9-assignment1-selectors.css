@@ -1,16 +1,36 @@
 * {
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
 }
 
+:root {
+    --primary-color: black;
+    --secondary-color: blue;
+    --tertiary-color: lightgrey;
+}
+
+/*
+@font-face {
+    font-family: ;
+    src: url();
+} */
+
 body {
+    margin: 20px;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+}
+
+body > h1 {
     margin: 20px;
 }
 
 main {
     margin: 20px;
-    background-color: lightgrey;
+    background-color: var(--tertiary-color);
     padding: 40px;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
 }
 
 .teaserImgContainer {
@@ -28,7 +48,7 @@ main {
 }
 
 .teaserDetails > h2 {
-    color: blue;
+    color: var(--secondary-color);
     text-transform: uppercase; /* not a best practice to change case from CSS */
     margin-bottom: 30px;
     font-size: 60px;
@@ -41,11 +61,11 @@ main {
 }
 
 .teaserDetails > button {
-    background-color: blue;
+    background-color: var(--secondary-color);
     color: white;
     padding: 20px;
     margin-top: 30px;
     text-transform: uppercase;
     border-radius: 50px;
-    border-color: blue;
+    border-color: var(--secondary-color);
 }
