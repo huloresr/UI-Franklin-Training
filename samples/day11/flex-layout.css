@@ -1,0 +1,104 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --primary-color: black;
+    --font-family: arial;
+    --secondary-color: red;
+}
+
+body {
+    font: 18px var(--font-family);
+}
+
+main {
+    width: 100%;
+    margin: 0 auto;
+    background-color: peachpuff;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+h1 + p {
+    margin-bottom: 40px;
+}
+
+.about > h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.about > p {
+    margin-bottom: 10px;
+}
+
+main > :first-child {
+    background: red;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+.portfolio > section, .experience > section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+/*input[type=text], input[type=email] {
+    border: 2px solid red;
+    border-radius: 5px;
+    padding: 2px;
+    height: 28px;
+}*/
+
+input:is([type=text], input[type=email]), textarea {
+    border: 2px solid red;
+    border-radius: 5px;
+    padding: 2px;
+    height: 28px;
+}
+
+.experience > section > div > div {
+    width: 200px;
+    display: flex;
+    justify-content: space-around;
+    vertical-align: middle;
+    margin-bottom: 20px;
+}
+
+/*
+    Desktop : min-width=992px
+    tabs: min-width=768px
+    mobile: max-width=600px
+*/
+@media screen and (min-width:992px) {
+    main {
+        width: 1200px;
+    }
+    main > :first-child {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    
+}
+
+/*  16px = 1em :    source for 1.2em will be relative to its parent
+                    padding and margins get affected
+    16px = 1rem :   source for 1.2 rem will be relative to font setting in root 
+                    padding and margins doesnt get affected 
+    Recommended way : 
+	For font size - use rem
+	For paddings and margins - use em
+*/
