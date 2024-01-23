@@ -1,0 +1,84 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/*  <uniquifier>: Use a uniquifier for the class name
+    <weight>: Use a value from 100 to 900 
+.montserrat-assignment {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 16px;
+  font-style: normal;
+} */
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 16px 32px;
+}
+
+.mainLogo {
+    width: 100px;
+}
+
+.centerNav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .centerNav ul li {
+    margin-right: 32px;
+  }
+
+  .rightNav, .rightNav > section {
+    display: flex;
+    margin-right: 20px;
+}
+
+.rightNav, .rightNav > section > p {
+    margin-left: 8px;
+}
+
+
+main {
+    height: 260px;
+}
+
+footer > .wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 60px;
+}
+
+footer ul {
+    list-style-type: none;
+}
+
+footer > .wrapper h3 {
+    padding-bottom: 20px;
+}
+footer ul > li {
+    padding-bottom: 10px;
+}
+
+.followUs > p {
+    width: 330px;
+    line-height: 25px;
+    padding-bottom: 10px;
+}
+
+.followUs > img {
+    padding-right: 25px;
+}
+
+footer > .wrapper a {
+    color: black;
+    margin-left: 20px;
+}
